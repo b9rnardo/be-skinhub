@@ -1,0 +1,180 @@
+
+@font-face {
+    font-family: 'Arvo-Regular';
+    src: local('Arvo-Regular'),
+    url("./fonts/Arvo-Regular.ttf") format("truetype");
+}
+
+*{
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Arvo-Regular';
+    text-decoration: none;
+    max-width: 125%;
+    background-color: rgb(251, 247, 231);
+}
+
+.SkinsPage{
+    margin-top: 220px;
+    text-align: center;
+    position: relative;
+}
+
+.App{
+    background-color: rgb(251, 247, 231);
+}
+
+.Skins{
+    display: flex;
+    flex-direction: row column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 400px;
+   
+}
+.bomba{
+    flex-direction: row;
+}
+
+.Logo{
+    margin-top: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:transparent;
+   
+}
+
+.Title{
+    font-weight: 700;
+    color: rgb(54, 52, 47);
+    background-color:transparent;
+}
+
+.SkinDesc{
+    color: rgb(54, 52, 47);
+}
+
+.SkinsComp{
+background-color: rgb(251, 247, 231);
+align-items: center;
+margin-left: 20px;
+margin-right: 20px;
+height: 300px;
+width: 400px;
+color: rgb(54, 52, 47);
+font-weight: 700;
+filter: drop-shadow(0 0 1px rgb(255,255,255,0.4));
+transition: filter 6s ease-in;
+border: 1px solid rgb(54, 52, 47);
+
+}
+
+.SkinName{
+    color: rgb(54, 52, 47);
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 15px;
+    padding-top: 12px;
+}
+
+.SkinDesc{
+    padding-top: 18px;
+    padding-right: 15px;
+    font-size: 80%;
+    text-align: right;
+    font-weight: 200;
+}
+
+.SkinPreview{
+border-radius: 4px;
+height: 225px;
+padding-top: 12px;
+position: relative;
+transition: 1s;
+width: 400px;
+}
+
+.SkinsHeader{
+    height: 45px;
+    position: relative;
+}
+
+@keyframes Glow {
+    from {
+        filter: drop-shadow(0 0 1px rgb(54, 52, 47));
+        transform: scale(1);
+        rotate: (30deg);
+    }
+    to{
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+        transform: scale(1.05);
+        rotate: (0deg);
+    }
+}
+
+
+.SkinsComp:hover{
+    animation: Glow 1s infinite alternate;
+}
+
+hr{
+        border: none; 
+        height: 1px; 
+        background-color: rgb(54, 52, 47); 
+        margin-top: 25vh;
+
+}
+
+.textfooter{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+display: flex;
+background-color: rgb(251, 247, 231);
+}
+
+.speed{
+    font-weight: 700;
+    text-decoration: underline;
+    color: rgb(54, 52, 47);
+    
+}
+
+.nav{
+    
+}
+
+.nav ul{
+color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    padding: 0;
+    margin: 5px;
+    size: 50px;
+    border-radius: 10%;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+
+}
+
+.nav a{
+    size: 50px;
+    border: 5px solid rgb(54, 52, 47);
+    background-color: rgb(54, 52, 47);
+    text-decoration: none;
+    color: rgb(251, 247, 231);
+}
+
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
